@@ -2,7 +2,7 @@
   "name": "dsh-memory",
   "version": "0.1.0",
   "type": "module",
-  "description": "dsh 持久记忆与梦境整理插件 — MCP server + stdio，零外部依赖",
+  "description": "dsh persistent memory — MCP server + dreaming, zero external dependencies",
   "bin": {
     "dsh-memory": "server.mjs",
     "dsh-dream": "dream.mjs"
@@ -15,8 +15,7 @@
     "server.mjs",
     "memory-core.mjs",
     "dream.mjs",
-    "README.md",
-    "examples/",
-    "install.sh"
-  ]
+    "README.md"
+  ],
+  "keywords": ["dsh", "mcp", "memory", "openclaw"]
 }
