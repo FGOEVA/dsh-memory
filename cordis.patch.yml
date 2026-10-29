@@ -1,0 +1,15 @@
+# dsh-memory — cordis patch
+# Install this into ~/.dsh/web/cordis.patch.yml or your profile's cordis.patch.yml
+
+- insert:
+    - id: dsh-memory-mcp
+      name: '@deepseek-ai/dsh-mcp-client'
+      config:
+        serverName: memory
+        transport: stdio
+        command: node
+        args: [./server.mjs]
+        cwd: !!js process.cwd()
+        env:
+          MEMORY_DIR: !!js process.env.HOME + '/.dsh/memory'
+          MEMORY_INSTRUCTIONS_MAX: 12000
